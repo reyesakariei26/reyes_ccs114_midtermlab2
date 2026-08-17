@@ -1,0 +1,1344 @@
+:root {
+
+    --sage: #A8CDBD;
+
+    --emerald: #25885C;
+
+    --forest: #203C25;
+
+    --terracotta: #8E3815;
+
+    --orange: #EF8F43;
+
+    --cream: #FAF7F0;
+
+    --white: #FFFFFF;
+
+    --dark-text: #26352A;
+
+    --gray: #6B716C;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background-color: var(--cream);
+
+    color: var(--dark-text);
+
+}
+
+section {
+
+    scroll-margin-top: 75px;
+
+}
+
+
+/* ==================================================
+   NAVBAR
+================================================== */
+
+.navbar {
+
+    background-color: var(--forest);
+
+    padding: 15px 0;
+
+}
+
+.navbar-brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: white !important;
+
+    font-size: 1.6rem;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+}
+
+.logo-icon {
+
+    color: var(--orange);
+
+    font-size: 1.4rem;
+
+}
+
+.logo-text {
+
+    color: white;
+
+}
+
+.nav-link {
+
+    color: white !important;
+
+    margin-left: 18px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+
+}
+
+.nav-link:hover {
+
+    color: var(--orange) !important;
+
+}
+
+.nav-link.active {
+
+    color: var(--orange) !important;
+
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero-section {
+
+    min-height: 650px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 80px 0;
+
+    background-color: var(--sage);
+
+    overflow: hidden;
+
+}
+
+.hero-label {
+
+    color: var(--terracotta);
+
+    font-size: 0.8rem;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+.hero-section h1 {
+
+    margin-top: 15px;
+
+    margin-bottom: 20px;
+
+    font-size: 4.5rem;
+
+    line-height: 1.05;
+
+    font-weight: 800;
+
+    color: var(--forest);
+
+}
+
+.hero-section h1 span {
+
+    display: block;
+
+    color: var(--terracotta);
+
+}
+
+.hero-section p {
+
+    max-width: 620px;
+
+    margin-bottom: 30px;
+
+    font-size: 1.1rem;
+
+    line-height: 1.8;
+
+    color: #33443A;
+
+}
+.hero-art {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+.hero-art:hover {
+    transform: translateY(-10px) rotate(2deg) scale(1.02);
+    box-shadow: 0 20px 35px rgba(31, 64, 38, 0.25);
+}
+
+
+/* ==================================================
+   HERO ARTWORK
+================================================== */
+
+.hero-art {
+
+    position: relative;
+
+    padding: 30px;
+
+}
+
+.hero-art-frame {
+
+    position: relative;
+
+    z-index: 2;
+
+   
+
+    padding: 12px;
+
+    border-radius: 5px;
+
+    transform: rotate(3deg);
+
+    box-shadow:
+        0 20px 40px rgba(32, 60, 37, 0.25);
+
+}
+
+.hero-art-frame img {
+
+    display: block;
+
+    width: 100%;
+
+    height: 450px;
+
+    object-fit: cover;
+
+}
+
+.hero-decoration {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+}
+
+.decoration-one {
+
+    width: 120px;
+
+    height: 120px;
+
+    right: -10px;
+
+    top: 0;
+
+    background-color: var(--orange);
+
+}
+
+.decoration-two {
+
+    width: 90px;
+
+    height: 90px;
+
+    left: 0;
+
+    bottom: 0;
+
+    background-color: var(--terracotta);
+
+}
+
+
+/* ==================================================
+   BUTTONS
+================================================== */
+
+.btn-orange {
+
+    background-color: var(--orange);
+
+    border: 2px solid var(--orange);
+
+    color: white;
+
+    padding: 11px 25px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+.btn-orange:hover {
+
+    background-color: var(--terracotta);
+
+    border-color: var(--terracotta);
+
+    color: white;
+
+    transform: translateY(-2px);
+
+}
+
+.btn-green {
+
+    background-color: var(--emerald);
+
+    border: 2px solid var(--emerald);
+
+    color: white;
+
+    padding: 11px 25px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+}
+
+.btn-green:hover {
+
+    background-color: var(--forest);
+
+    border-color: var(--forest);
+
+    color: white;
+
+}
+
+
+/* ==================================================
+   INTRO
+================================================== */
+
+.intro-section {
+
+    padding: 100px 0;
+
+    background-color: white;
+
+}
+
+.section-label {
+
+    color: var(--terracotta);
+
+    font-size: 0.78rem;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+.intro-section h2,
+.about-section h2 {
+
+    font-size: 3rem;
+
+    font-weight: 800;
+
+    margin: 12px 0 20px;
+
+}
+
+.intro-section h2 span,
+.about-section h2 span {
+
+    color: var(--terracotta);
+
+}
+
+.intro-section p {
+
+    max-width: 750px;
+
+    line-height: 1.8;
+
+    color: var(--gray);
+
+}
+
+
+/* ==================================================
+   ART BOX
+================================================== */
+
+.art-box {
+
+    padding: 40px;
+
+    background-color: var(--forest);
+
+    color: white;
+
+    border-radius: 25px;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.art-box::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 120px;
+
+    height: 120px;
+
+    border-radius: 50%;
+
+    background-color: var(--orange);
+
+    right: -40px;
+
+    top: -40px;
+
+}
+
+.art-box i {
+
+    font-size: 2.8rem;
+
+    color: var(--orange);
+
+}
+
+.art-box h4 {
+
+    margin-top: 15px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+}
+
+.art-box p {
+
+    color: #DDE8E1;
+
+    line-height: 1.7;
+
+}
+
+
+/* ==================================================
+   SECTION HEADINGS
+================================================== */
+
+.section-heading {
+
+    margin-bottom: 50px;
+
+}
+
+.section-heading h2 {
+
+    font-size: 2.8rem;
+
+    font-weight: 800;
+
+    margin-top: 10px;
+
+}
+
+.section-heading p {
+
+    color: var(--gray);
+
+    line-height: 1.7;
+
+}
+
+
+/* ==================================================
+   CATEGORIES
+================================================== */
+
+.categories-section {
+
+    padding: 100px 0;
+
+    background-color: var(--sage);
+
+}
+
+.category-card {
+
+    height: 100%;
+
+    padding: 35px;
+
+    border-radius: 22px;
+
+    border: 2px solid transparent;
+
+    background-color: white;
+
+    transition: 0.35s;
+
+}
+
+.category-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: var(--emerald);
+
+    box-shadow:
+        0 15px 35px rgba(32, 60, 37, 0.15);
+
+}
+
+.category-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    font-size: 1.7rem;
+
+    margin-bottom: 20px;
+
+}
+
+.green-icon {
+
+    background-color: var(--sage);
+
+    color: var(--forest);
+
+}
+
+.orange-icon {
+
+    background-color: var(--orange);
+
+    color: white;
+
+}
+
+.brown-icon {
+
+    background-color: var(--terracotta);
+
+    color: white;
+
+}
+
+.category-card h4 {
+
+    font-weight: 800;
+
+}
+
+.category-card p {
+
+    color: var(--gray);
+
+    line-height: 1.7;
+
+}
+
+.category-badge {
+
+    background-color: var(--emerald);
+
+}
+
+.orange-badge {
+
+    background-color: var(--orange);
+
+}
+
+.brown-badge {
+
+    background-color: var(--terracotta);
+
+}
+
+
+/* ==================================================
+   GALLERY
+================================================== */
+
+.gallery-section {
+
+    padding: 100px 0;
+
+    background-color: var(--cream);
+
+}
+
+.art-card {
+
+    height: 100%;
+
+    border: none;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    background-color: white;
+
+    box-shadow:
+        0 5px 20px rgba(32, 60, 37, 0.08);
+
+    transition: 0.35s;
+
+}
+
+.art-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 18px 40px rgba(32, 60, 37, 0.18);
+
+}
+
+.art-card img {
+
+    width: 100%;
+
+    height: 280px;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+
+}
+
+.art-card:hover img {
+
+    transform: scale(1.06);
+
+}
+
+.art-card .card-body {
+
+    padding: 25px;
+
+}
+
+.art-card .card-title {
+
+    margin-top: 15px;
+
+    font-size: 1.25rem;
+
+    font-weight: 800;
+
+    color: var(--forest);
+
+}
+
+.art-card .card-text {
+
+    color: var(--gray);
+
+    line-height: 1.6;
+
+    min-height: 55px;
+
+}
+
+.badge {
+
+    display: inline-block;
+
+    background-color: var(--emerald);
+
+    color: white;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    font-size: 0.7rem;
+
+    letter-spacing: 1px;
+
+}
+
+.amorsolo-badge {
+
+    background-color: var(--orange);
+
+}
+
+.btn-view {
+
+    background-color: var(--emerald);
+
+    color: white;
+
+    border: none;
+
+    padding: 8px 18px;
+
+    border-radius: 25px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+
+}
+
+.btn-view:hover {
+
+    background-color: var(--terracotta);
+
+    color: white;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* ==================================================
+   ABOUT
+================================================== */
+
+.about-section {
+
+    padding: 100px 0;
+
+    background-color: white;
+
+}
+
+.about-section p {
+
+    color: var(--gray);
+
+    line-height: 1.8;
+
+}
+
+.about-art {
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px rgba(32, 60, 37, 0.15);
+
+}
+
+.about-art img {
+
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+
+}
+
+.about-art:hover img {
+
+    transform: scale(1.05);
+
+}
+
+
+/* ==================================================
+   ACCORDION
+================================================== */
+
+.faq-section {
+
+    padding: 90px 0;
+
+    background-color: var(--sage);
+
+}
+
+.accordion-item {
+
+    border: none;
+
+    margin-bottom: 12px;
+
+    border-radius: 12px !important;
+
+    overflow: hidden;
+
+}
+
+.accordion-button {
+
+    color: var(--forest);
+
+    background-color: white;
+
+    font-weight: 700;
+
+    padding: 20px;
+
+}
+
+.accordion-button:not(.collapsed) {
+
+    background-color: var(--emerald);
+
+    color: white;
+
+    box-shadow: none;
+
+}
+
+.accordion-button:focus {
+
+    box-shadow: none;
+
+}
+
+
+/* ==================================================
+   CONTACT
+================================================== */
+
+.contact-section {
+
+    padding: 90px 0;
+
+    background-color: var(--terracotta);
+
+    color: white;
+
+}
+
+.contact-section .section-label {
+
+    color: var(--sage);
+
+}
+
+.contact-section h2 {
+
+    margin: 12px 0 20px;
+
+    font-size: 3rem;
+
+    font-weight: 800;
+
+}
+
+.contact-section h2 span {
+
+    color: var(--orange);
+
+}
+
+.contact-intro {
+
+    max-width: 650px;
+
+    color: #F8EDE6;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* ==================================================
+   CONTACT DETAILS
+================================================== */
+
+.contact-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 20px;
+
+}
+
+.contact-icon {
+
+    width: 45px;
+
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background-color: var(--orange);
+
+    color: white;
+
+    font-size: 1.1rem;
+
+}
+
+.contact-item strong {
+
+    display: block;
+
+    font-size: 0.9rem;
+
+    letter-spacing: 1px;
+
+}
+
+.contact-item p {
+
+    margin: 3px 0 0;
+
+    color: #F8EDE6;
+
+}
+
+
+/* ==================================================
+   CONTACT FORM
+================================================== */
+
+.contact-form {
+
+    background-color: white;
+
+    color: var(--forest);
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 35px rgba(32, 60, 37, 0.20);
+
+}
+
+.contact-form h4 {
+
+    font-size: 1.5rem;
+
+    font-weight: 800;
+
+    margin-bottom: 25px;
+
+}
+
+.contact-form .form-label {
+
+    font-weight: 600;
+
+    color: var(--forest);
+
+}
+
+.contact-form .form-control {
+
+    border: 1px solid #D5DDD7;
+
+    border-radius: 10px;
+
+    padding: 11px 14px;
+
+}
+
+.contact-form .form-control:focus {
+
+    border-color: var(--emerald);
+
+    box-shadow:
+        0 0 0 3px rgba(37, 136, 92, 0.15);
+
+}
+
+.btn-contact {
+
+    width: 100%;
+
+    background-color: var(--emerald);
+
+    border: none;
+
+    color: white;
+
+    padding: 12px;
+
+    border-radius: 25px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+
+}
+
+.btn-contact:hover {
+
+    background-color: var(--forest);
+
+    color: white;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+footer {
+    background-color: #1f4026;
+    color: white;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+footer h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+}
+
+footer h4 i {
+    color: #f28c45;
+    margin-right: 8px;
+}
+
+footer .footer-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+.footer-line {
+    border-top: 2px solid rgba(255, 255, 255, 0.25);
+    margin: 0 auto 20px;
+    width: 85%;
+}
+footer .copyright {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    color: #f1f1f1;
+}
+
+
+/* ==================================================
+   MODAL
+================================================== */
+
+.modal-content {
+
+    border: none;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+}
+
+.modal-header {
+
+    background-color: var(--forest);
+
+    color: white;
+
+    padding: 20px 25px;
+
+}
+
+.modal-header .btn-close {
+
+    filter: invert(1);
+
+}
+
+.modal-title {
+
+    font-weight: 800;
+
+}
+
+.modal-small-title {
+
+    display: block;
+
+    color: var(--orange);
+
+    font-size: 0.7rem;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 5px;
+
+}
+
+.modal-body {
+
+    padding: 30px;
+
+}
+
+.modal-art-image {
+
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: contain;
+
+    background-color: #F1EEE7;
+
+    border-radius: 15px;
+
+    margin-bottom: 25px;
+
+}
+
+.modal-information h3 {
+
+    margin-top: 15px;
+
+    font-weight: 800;
+
+    color: var(--forest);
+
+}
+
+.modal-information p {
+
+    color: var(--gray);
+
+    line-height: 1.8;
+
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 991px) {
+
+    .hero-section {
+
+        padding: 70px 0;
+
+    }
+
+    .hero-section h1 {
+
+        font-size: 3.5rem;
+
+    }
+
+    .hero-art {
+
+        margin-top: 40px;
+
+    }
+
+    .nav-link {
+
+        margin-left: 0;
+
+        margin-top: 8px;
+
+    }
+
+    .intro-section h2,
+    .about-section h2,
+    .contact-section h2 {
+
+        font-size: 2.5rem;
+
+    }
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 767px) {
+
+    .hero-section {
+
+        padding: 60px 0;
+
+        text-align: center;
+
+    }
+
+    .hero-section h1 {
+
+        font-size: 2.6rem;
+
+    }
+
+    .hero-section p {
+
+        font-size: 0.95rem;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+    .hero-art {
+
+        padding: 20px;
+
+    }
+
+    .hero-art-frame img {
+
+        height: 350px;
+
+    }
+
+    .intro-section,
+    .categories-section,
+    .gallery-section,
+    .about-section,
+    .faq-section {
+
+        padding: 65px 0;
+
+    }
+
+    .intro-section h2,
+    .about-section h2,
+    .contact-section h2 {
+
+        font-size: 2.1rem;
+
+    }
+
+    .section-heading h2 {
+
+        font-size: 2.2rem;
+
+    }
+
+    .about-art img {
+
+        height: 350px;
+
+    }
+
+    .modal-art-image {
+
+        height: 350px;
+
+    }
+
+    .contact-section {
+
+        padding: 65px 0;
+
+    }
+
+    .contact-form {
+
+        padding: 25px;
+
+    }
+
+}
+
+
+/* ==================================================
+   SMALL PHONES
+================================================== */
+
+@media (max-width: 480px) {
+
+    .navbar-brand {
+
+        font-size: 1.3rem;
+
+    }
+
+    .hero-section h1 {
+
+        font-size: 2.1rem;
+
+    }
+
+    .hero-art-frame img {
+
+        height: 280px;
+
+    }
+
+    .art-card img {
+
+        height: 250px;
+
+    }
+
+    .modal-art-image {
+
+        height: 280px;
+
+    }
+
+}
